@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Art</title>
+    <meta name="description" content="Pregledajte našu ponudu umetničkih proizvoda, uključujući slike i skulpture.">
+    <meta name="keywords" content="proizvodi, slike, skulpture, umetnost, Upoznaj umetnost">
+    <meta name="author" content="Upoznaj umetnost">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="zaglavlje">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mail">
+                <img src="img/mail.png" alt="Mail ikonica">
+                <p>minatutus002@gmail.com</p>
+            </div>
+        </div>
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="o-nama.html">O nama</a></li>
+                <li><a href="proizvodi.html">Proizvodi</a></li>
+                <li><a href="kontakt.html" class="kontakt-dugme">Kontakt</a></li>
+            </ul>
+            <div class="podesavanja">
+                <button id="tema">
+                    <img src="img/tema.png" alt="Promeni temu">
+                </button>
+                <button id="font">
+                    <img src="img/velicina.png" alt="Promeni veličinu fonta">
+                </button>
+            </div>
+        </nav>
+    </header>
+    <aside id="zaglavljestr">
+        <a href="javascript:void(0)" class="zatvori" id="zatvori-hamburger">&times;</a>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="o-nama.html">O nama</a></li>
+            <li><a href="proizvodi.html">Proizvodi</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section class="hero">
+            <img src="img/planeta.jpg" alt="Hero slika" class="hero-img">
+            <div class="hero-kontent">
+                <h1>Za svaki kupljeni proizvod, uklanjamo jedan kilogram otpada iz reka i jezera.</h1>
+                <div class="brojac">
+                    <span class="brojac-brojka">1,234,567</span>
+                    <p>kilograma otpada uklonjeno</p>
+                </div>
+                
+            </div>
+        </section>
+        <section class="product-details">
+            <div class="product-grid">
+                <img src="img/slika1.jpg" alt="Dvorac" data-name="Dvorac" data-price="5000" data-description="Prekrasan prikaz starog dvorca u prirodi.">
+                <img src="img/slika2.jpg" alt="Devojka u prirodi" data-name="Devojka u prirodi" data-price="6000" data-description="Mlada devojka sjedi u sjeni drveća.">
+                <img src="img/slika3.jpg" alt="Rođenje Venere" data-name="Rođenje Venere" data-price="7000" data-description="Poznata slika Sandro Botičelija.">
+                <img src="img/figura1.jpg" alt="Skulptura sa pticom" data-name="Skulptura sa pticom" data-price="8000" data-description="Jedinstvena skulptura žene sa pticom na glavi.">
+                <img src="img/figura2.jpg" alt="Skulptura čoveka" data-name="Skulptura čoveka" data-price="9000" data-description="Figura čoveka sa malom figurom u rukama.">
+                <img src="img/figura3.jpg" alt="Skulptura sa mačkom" data-name="Skulptura sa mačkom" data-price="10000" data-description="Skulptura žene sa mačkom na glavi.">
+                <img src="img/slikarstvo.jpg" alt="Slikarska radionica" data-name="Slikarska radionica" data-price="11000" data-description="Radionica gde možete pokazati vaša slikarska umeća uz dobro druženje i muziku, svakog 15. u mesecu!">
+                <img src="img/glina.jpg" alt="Keramička radionica" data-name="Keramička radionica" data-price="12000" data-description="Radionica gde se možete oprobati u glinenim veštinama, svakog vikenda!">
+                <img src="img/druzenje.jpg" alt="Druženje u kafiću" data-name="Druženje u kafiću" data-price="13000" data-description="Prijateljsko druženje uz kafu i kupovinu umetničkih proizvoda, svakog radnog dana!">
+            </div>
+        </section>
+        
+        <section class="cart">
+            <h2>Vaša korpa</h2>
+            <ul id="cart-items">
+                <!-- Artikli će biti dodati ovde -->
+            </ul>
+            <p id="total-price">Ukupan iznos: 0 RSD</p>
+            <section id="Rezervacija" style="display: none;">
+            <span><p>Ime:</p><input type="text" id="Ime"></span>
+            <span><p>Prezime:</p><input type="text" id="Prezime"></span>
+            <span><p>Email:</p><input type="text" id="Email1"></span><br>
+            <button class="btn" id="potvrda">Rezerviši</button>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Umetnička Galerija. Sva prava zadržana.</p>
+    </footer>
+    <div id="product-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-product-name"></h2>
+            <p id="modal-product-price"></p>
+            <p id="modal-product-description"></p>
+            <input type="date" id="kalendar">
+            <button class="btn" id="add-to-cart-modal">Dodaj u korpu</button>
+        </div>
+    </div>
+</body>
+</html>

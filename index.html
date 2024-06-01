@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upoznaj umetnost</title>
+    <meta name="description" content="Upoznaj umetnost - Najbolje mesto za umetničke proizvode i radionice.">
+    <meta name="keywords" content="umetnost, galerija, slike, skulpture, radionice, prodaja umetnosti">
+    <meta name="author" content="Upoznaj umetnost">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="zaglavlje">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mail">
+                <img src="img/mail.png" alt="Mail ikonica">
+                <p>minatutus002@gmail.com</p>
+            </div>
+        </div>
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="o-nama.html">O nama</a></li>
+                <li><a href="proizvodi.html">Proizvodi</a></li>
+                <li><a href="kontakt.html" class="kontakt-dugme">Kontakt</a></li>
+            </ul>
+            <div class="podesavanja">
+                <button id="tema">
+                    <img src="img/tema.png" alt="Promeni temu">
+                </button>
+                <button id="font">
+                    <img src="img/velicina.png" alt="Promeni veličinu fonta">
+                </button>
+            </div>
+        </nav>
+    </header>
+    <aside id="zaglavljestr">
+        <a href="javascript:void(0)" class="zatvori" id="zatvori-hamburger">&times;</a>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="o-nama.html">O nama</a></li>
+            <li><a href="proizvodi.html">Proizvodi</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </aside>
+    <main>
+        <div class="hero" id="hero">
+            <div class="hero-kontent">
+                <h1>Upoznaj umetnost</h1>
+                <button id="istrazi" onclick="popupFN()">Istražite</button>
+            </div>
+        </div>
+        <div id="popup1" class="popup1-preklapanje">
+            <div class="popup-kontent">
+                <span class="zatvori" id="zatvori1" onclick="closeFN()">&times;</span>
+                <h3 id="prozorce"><mark>Upoznajte se sa pravim vrednostima umetnosti kroz kratak edukativni clanak. Uzivajte!</mark></h3>
+                <p id="prozorce">Umetnost je oduvek bila ključni deo ljudske civilizacije, od pećinskih crteža do savremenih instalacija. Ona nam omogućava da izrazimo svoje najdublje emocije, prenesemo važne poruke i stvorimo kulturnu baštinu koja će trajati vekovima.</p>
+                <img src="img/slika4.jpg" alt="Pecina">
+                <p id="prozorce">Kroz istoriju, umetnost je igrala vitalnu ulogu u razvoju kultura i civilizacija. Od starogrčkih skulptura i renesansnih slika, do afričkih maski i azijskih kaligrafija, umetnost je dokumentovala istorijske trenutke, verovanja i običaje. Ona je bila sredstvo komunikacije pre nego što su pisani jezici postali uobičajeni, i često je služila kao način da se izrazi religioznost, moć i društveni status.</p>
+                <h3 id="prozorce"><mark>Umetnost i emocije</mark></h3>
+                <p id="prozorce">Jedan od najmoćnijih aspekata umetnosti je njena sposobnost da izazove emocije. Bez obzira da li gledamo sliku koja nas podseća na srećan trenutak iz detinjstva, ili skulpturu koja nas ostavlja u stanju zadivljenosti, umetnost ima jedinstvenu moć da komunicira sa našim unutrašnjim svetom. Ona može biti terapijska, pomažući nam da obradimo emocije i pronađemo smisao u haotičnom svetu.</p>
+                <img src="img/emocije.jpg" alt="umetnost i emocije">
+                <h3 id="prozorce"><mark>Umetnost u savremenom društvu</mark></h3>
+                <p id="prozorce">U današnjem ubrzanom svetu, umetnost igra važnu ulogu u održavanju naše kulture i identiteta. Ona nas povezuje sa našim korenima i pruža nam osećaj kontinuiteta. Umetnost je takođe važan ekonomski faktor, podržavajući mnoge industrije i stvarajući radna mesta. Ona je prisutna svuda – od muzeja i galerija, do javnih prostora i digitalnih medija.</p>
+                <h3 id="prozorce"><mark>Zašto ulagati u umetnička dela?</mark></h3>
+                <p id="prozorce">Ulaganje u umetnost nije samo finansijska odluka, već i kulturna i emocionalna. Umetnička dela mogu povećati svoju vrednost tokom vremena, ali takođe pružaju estetsko zadovoljstvo i obogaćuju naš svakodnevni život. Kupovina umetničkih dela podržava umetnike i doprinosi očuvanju kulturne baštine. Kada investiramo u umetnost, mi investiramo u budućnost kreativnosti i ljudskog izraza.</p>
+                <img src="img/slika5.jpg" alt="umetnicka sreca" >
+            </div>
+        </div>
+        <div class="img-blok">
+            <img src="img/banner1.jpg" alt="Galerija">
+            <img src="img/banner2.jpg" alt="Zenski akt">
+            <img src="img/banner3.jpg" alt="Slikanje">
+            <img src="img/banner4.jpg" alt="Mozaik1">
+            <img src="img/banner5.jpg" alt="Mozaik2">
+        </div>
+        <section id="istrazi-umetnost" class="istrazi">
+            <div class="istrazi-tekst">
+
+                <h2 class="sjaj">Upoznaj svet kreativnosti i ekspresije u srcu Zrenjanina.</h2>
+                <p class="fade">Naša galerija prikazuje raznovrsna dela renomiranih i novih umetnika, nudeći jedinstveno kulturno iskustvo za ljubitelje umetnosti. Bez obzira da li ste iskusni kolekcionar ili tek otkrivate svet umetnosti, naš izbor obuhvata širok spektar stilova i tehnika koje zadovoljavaju različite ukuse i interese. Ponosni smo što možemo da predstavimo dela koja odražavaju bogatstvo i raznovrsnost umetničkog izraza.
+
+                    U našoj galeriji možete pronaći umetnička dela koja pričaju priče, izazivaju razmišljanje i inspirišu. Svako delo je pažljivo odabrano kako bi se osigurala njegova autentičnost i umetnička vrednost. Naš tim stručnjaka je tu da vam pomogne da pronađete savršeno umetničko delo za vaš dom, kancelariju ili kao poseban poklon.
+                    
+                    Pozivamo vas da posetite našu galeriju i doživite umetnost na nov i uzbudljiv način. Kroz naše izložbe i događaje, želimo da vas povežemo sa umetnicima i njihovim delima, omogućujući vam da postanete deo živopisne i dinamične umetničke zajednice. Umetnost nije samo ukras; ona je izraz naše kulture, emocija i identiteta.
+                    
+                    </p>
+                <a class="stupiteukontakt" id="kontaktProzor" onclick="OtvoriKontakt()" style="cursor: pointer;">Pridružite se našoj kreativnoj ekspediciji</a>
+            </div>
+            <div class="istrazi-slike">
+                <img src="img/gallery.jpg" alt="Umetnicka Galerija">
+            </div>
+            <div id="prozorKontakt" class="prozor-preklapanje">
+                <div class="prozor-kontakt">
+                    <span class="zatvori" id="zatvori1" onclick="closeFN()">&times;</span>
+                    <h1 style="text-align: center;">Unesite Vaše podatke i recite nam zašto ste baš Vi pravi kandidat za ulogu "Umetnički ekspert"</h1>
+                    <p id="prozorce">Ime:</p>
+                    <input type="text">
+                    <p id="prozorce">Prezime:</p>
+                    <input type="text">
+                    <p id="prozorce">Poruka:</p>
+                    <textarea cols="50" rows="5"></textarea><br>
+                    <button class="btn" onclick="alert('Uspesno ste poslali poruku! Hvala!')">Pošalji</button>
+                </div>
+        </section>
+        <section id="izlozba" class="kartice">
+            <h2>Doživite lepotu savremene umetnosti</h2>
+            <div class="izlozba-kartice">
+                <div class="kartica">
+                    <img src="img/prodaja.jpg" alt="Buy and sell paintings">
+                    <h4>Mogućnost kupovine i prodaje umetničkih dela.</h4>
+                    <p>Otvorite vrata svetu umetnosti kroz našu ekskluzivnu kolekciju.</p>
+                    <a id="dugmeSaznaj" class="cta-dugme" onclick="SaznajVise()" style="cursor: pointer;">Saznajte više</a>
+                </div>
+                <div class="kartica">
+                    <img src="img/skulptura.jpg" alt="Skulptura">
+                    <h4>Kupovina skulptura</h4>
+                    <p>Unesite eleganciju u svoj prostor sa jedinstvenim skulpturama.</p>
+                    <a href="proizvodi.html" class="cta-dugme">Pogledajte kolekciju</a>
+                </div>
+                <div class="kartica">
+                    <img src="img/radionice.jpg" alt="Radionica" >
+                    <h4>Mesec za mesecom, naše grupne radionice vas čekaju!</h4>
+                    <p>Pridružite nam se svakog meseca na našim dinamičnim grupnim radionicama, gde zajedno učimo, rastemo i razvijamo nove veštine. Naši iskusni predavači vode vas kroz inspirativne sesije koje obuhvataju širok spektar tema, prilagođene kako početnicima, tako i naprednim učesnicima. Otkrijte nova znanja, upoznajte istomišljenike i budite deo zajednice koja teži kontinuiranom razvoju i inovacijama.</p>
+                </div>
+            </div>
+            <div id="prozorProdaja" class="prozor-preklapanje">
+                <div class="prozor-prodaja">
+                    <span class="zatvori" id="zatvori1" onclick="closeFN()">&times;</span>
+                    <h3 style="text-align: center;">Poziv umetnicima: Prijavite svoja dela za izlaganje u našoj galeriji!</h3>
+                    <p>Dragi umetnici, Naša galerija je uvek u potrazi za novim talentima i jedinstvenim umetničkim delima koja će obogatiti našu kolekciju i ponuditi nešto novo našim posetiocima.
+                    Ukoliko stvarate umetnost i želite da vaše delo bude izloženo i prodavano putem naše platforme, pozivamo vas da nam pošaljete slike svojih radova!</p>
+                    <h3 style="text-align: center;">Kako da prijavite svoje umetničko delo?</h3>
+                    <p>Proces prijave je jednostavan i transparentan. Slijedite ove korake kako biste imali priliku da vaše delo bude prikazano na našem sajtu:</p>
+                    <span><h4>1. Pripremite slike svojih umetničkih dela:</h4><p>Fotografije trebaju biti visokog kvaliteta, jasno prikazujući vaš rad. Preporučujemo da uključite nekoliko uglova i detaljnih snimaka.</p></span>
+                    <span><h4>2. Napišite kratak opis svakog dela:</h4><p>U opisu navedite tehniku, dimenzije, naziv dela, godinu nastanka i inspiraciju iza rada.</p></span>
+                    <span><h4>3. Priložite biografiju i portfolio:</h4><p>Kratak pregled vašeg umetničkog puta i portfolio prethodnih radova će nam pomoći da vas bolje upoznamo.</p></span>
+                    <span><h4>4. Pošaljite sve navedene materijale putem mejla:</h4><p>Sve prijave šaljite na našu adresu: minatutus002@gmail.com</p></span>
+                    <h3>Proces selekcije:</h3>
+                    <p>Nakon što primimo vaše prijave, naš stručni tim će pažljivo pregledati svaki rad prema sledećim kriterijumima:</p>
+                    <span><h4>Originalnost i kreativnost:</h4><p>Tražimo dela koja donose nešto novo i jedinstveno.</p></span>
+                    <span><h4>Tehnička izvedba:</h4><p>Kvalitet izrade i upotreba materijala su važni faktori.</p></span>
+                    <span><h4>Usklađenost sa tematikom galerije:</h4><p>Dela koja se uklapaju u našu viziju i tematski okvir imaju veće šanse za selekciju.</p></span>
+                    <span><h4>Estetska vrednost:</h4><p>Radovi koji estetski privlače i imaju potencijal da se dopadnu našoj publici.</p></span>
+                    <p>Nakon pregleda, kontaktiraćemo odabrane umetnike putem mejla i dogovoriti dalje korake za izlaganje i promociju njihovih dela. Ukoliko vaše delo bude izabrano, dobićete priliku da ga prikažete široj publici i ostvarite potencijalnu prodaju putem našeg sajta</p>
+                    <h3 style="text-align: center;">Zašto izabrati našu galeriju?</h3>
+                    <p>Naša galerija nudi jedinstveno kulturno iskustvo za ljubitelje umetnosti i pruža umetnicima platformu da pokažu svoj rad svetu. Sa širokom mrežom posetilaca i kupaca, vaša dela će biti izložena na mestu gde ih može videti i ceniti veliki broj ljubitelja umetnosti.</p>
+                    <p>Pozivamo vas da se pridružite našoj zajednici umetnika i podelite svoju kreativnost sa svetom. Radujemo se vašim prijavama i jedva čekamo da otkrijemo nove talente!</p>
+                    <br><br><br>
+                    <p>Za dodatne informacije ili pitanja, slobodno nas kontaktirajte putem mejla na minatutus002@gmail.com</p>
+                    <br><br>
+                    <p>Srećno,
+                        Tim vaše umetničke galerije</p>
+
+                    
+                </div>
+
+        </section>
+        <section class="kontaktstr">
+            <div class="kontaktstr-sadrzaj">
+                <div class="kontaktstr-detalji">
+                    <h2>Kontakt</h2>
+                    <p>Za sva pitanja i informacije, slobodno nas kontaktirajte putem sledećih podataka:</p>
+                    <p><img src="img/mail.png" alt="Email Icon"> minattutus002@gmail.com</p>
+                    <p><strong>Lokacija:</strong><br> 
+                        <img src="img/location-icon.png" alt="Location Icon" class="location-icon"> Obala Sonje Marinković 2, Zrenjanin, 23000
+                    </p>
+
+                    <p><strong>Radno vreme:</strong></p>
+                    <ul>
+                        <li>Ponedeljak: 9:00 - 18:00</li>
+                        <li>Utorak: 9:00 - 18:00</li>
+                        <li>Sreda: 9:00 - 18:00</li>
+                        <li>Četvrtak: 9:00 - 18:00</li>
+                        <li>Petak: 9:00 - 18:00</li>
+                        <li>Subota: 10:00 - 14:00</li>
+                        <li>Nedelja: Zatvoreno</li>
+                    </ul>
+                </div>
+                <div class="kontaktstr-logo">
+                    <img src="img/logo.png" alt="Logo">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Umetnička Galerija. Sva prava zadržana.</p>
+    </footer>
+</body>
+</html>

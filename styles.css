@@ -1,0 +1,886 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+header {
+    background-color: #111;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.zaglavlje {
+    display: flex;
+    align-items: center;
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+}
+
+.mail img {
+    margin-right: 0.5em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.kontakt-dugme{
+    border: 2px solid #fff;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+.hamburger span {
+    height: 2px;
+    width: 25px;
+    background: #fff;
+    margin: 4px 0;
+}
+
+#zaglavljestr{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#zaglavljestr .zatvori {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#zaglavljestr ul {
+    list-style: none;
+    padding: 0;
+}
+
+#zaglavljestr ul li {
+    padding: 8px 8px 8px 32px;
+    text-align: left;
+}
+
+#zaglavljestr ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+#zaglavljestr ul li a:hover {
+    color: #007bff;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
+
+.hero-kontent {
+    position: relative;
+    z-index: 2;
+}
+
+.img-blok {
+    display: none;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+footer {
+    
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.kontakt-sekcija {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 2em;
+    padding-left: 10px;
+}
+
+.kontaktstr-sadrzaj {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+form {
+    flex: 1;
+    max-width: 400px;
+}
+
+.form-grupa {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+form label img {
+    margin-right: 0.5em;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #d4af37;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.mapa {
+    flex: 2;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #111;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 1em 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .kontaktstr-sadrzaj {
+        flex-direction: column;
+    }
+
+    .mapa {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+#izlozba {
+    padding: 4em 2em;
+    text-align: center;
+    background-color: #0b6680;
+    color: #000;
+}
+
+#izlozba h3 {
+    color: #007bff;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+#izlozba h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: white;
+}
+
+#izlozba p {
+    font-size: 1em;
+    margin-bottom: 2em;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.izlozba-kartice {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.kartica {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.kartica:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.kartica img {
+    width: 100%;
+    height: auto;
+}
+
+.kartica h4 {
+    padding: 1em;
+    font-size: 1.2em;
+}
+.cta-dugme {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #046b75;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.cta-dugme:hover {
+    background-color: #034d5b;
+}
+
+#istrazi-umetnost {
+    display: flex;
+    align-items: center;
+    padding: 4em 2em;
+    background-color: #fff;
+    color: #000;
+}
+
+.istrazi-tekst
+{
+    flex: 1;
+    padding-right: 2em;
+}
+
+.istrazi-tekst h3 {
+    color: #007bff;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.istrazi-tekst h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.istrazi-tekst p {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+}
+
+.stupiteukontakt {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.istrazi-slike {
+    flex: 1;
+}
+
+.istrazi-slike img {
+    width: 100%;
+    border-radius: 8px;
+}
+#location-icon {
+    width: 50px; /* smanjite veličinu ikonice */
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.container {
+    padding-bottom: 50px; /* Dodaje prostor ispod sadržaja */
+}
+
+footer {
+   
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-logo {
+    width: 100px; /* ili bilo koja veličina koja vam odgovara */
+    height: auto;
+    float: right;
+    margin-top: -40px; /* može se prilagoditi za bolji izgled */
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+.kontaktstr {
+    background-color: #333;
+    color: #fff;
+
+}
+
+.kontaktstr-sadrzaj {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.kontaktstr-detalji {
+    flex: 1;
+    padding-left: 40px; /* Pomeranje teksta udesno */
+}
+
+.kontakstr-logo {
+    flex-shrink: 0;
+    margin-left: auto; /* Postavlja logo na desnu stranu */
+    padding-right: 40px; /* Dodaje prostor između loga i desne ivice */
+}
+
+.contact-map {
+    flex-shrink: 0;
+    width: 50%;
+    padding: 20px;
+}
+
+.kontaktstr-detalji form {
+    display: flex;
+    flex-direction: column;
+}
+
+.kontaktstr-detalji label {
+    margin-top: 10px;
+}
+
+.kontaktstr-detalji input,
+.kontaktstr-detalji textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.kontaktstr-detalji button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.kontaktstr-detalji button:hover {
+    background: #0056b3;
+}
+/* Product details section */
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+.product-grid  img {
+    width: 100%;
+    height: 300px; /* Adjust this value based on your desired height */
+    object-fit: contain; /* Ensures the entire image is visible without distortion */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.product-grid  img:hover {
+    transform: scale(1.05);
+}
+
+/* Cart section */
+.cart {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.cart h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#total-price {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-kontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-kontent h1 {
+    font-size: 2rem;
+}
+
+.brojac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.brojac-brojka {
+    font-weight: bold;
+    margin-right: 10px;
+}
+/* Modal styles */
+.modal {
+    
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+    color: #000;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.potvrda{
+    margin-top: 5px;
+}
+.o-nama {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.onama-slika {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+
+.onama-sadrzaj {
+    flex: 1;
+    color: #333;
+}
+
+.onama-sadrzaj h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.onama-sadrzaj p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+#popup1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    text-align: center;
+}
+.popup-kontent {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+.zatvori {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.zatvori:hover,
+.zatvori:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#istrazi {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+}
+#prozorce
+{
+    color: #111;
+   
+}
+
+#prozorKontakt{
+    display: none;
+}
+
+#prozorKontakt {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    text-align: center;
+}
+.prozor-kontakt {
+    background-color: #888;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 5px solid #000;
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+
+.poruka1{
+    size-adjust: auto;
+}
+
+#prozorProdaja {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    text-align: center;
+}
+.prozor-prodaja {
+    background-color: #fff;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+
+.sjaj {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0056b3, 0 0 40px #007bff, 0 0 50px #0056b3, 0 0 60px #0056b3, 0 0 70px #0056b3;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.sjaj:hover {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0056b3, 0 0 50px #0056b3, 0 0 60px #0056b3, 0 0 70px #0056b3, 0 0 80px #0056b3;
+}
+
+/* Fade effect */
+.fade {
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+}
+
+@keyframes fadeIn {
+    
+      0%  {opacity: 0;}
+      20% {opacity: 0.2;}
+      40% {opacity: 0.4;}
+      60% {opacity: 0.6;}
+      80% {opacity: 0.8;}
+      100% {opacity: 1;}
+    
+}
+
+
+
+body.large-font {
+    font-size: 18px;
+}
+
+
+body.small-font {
+    font-size: 14px;
+}
+
+body.gray-theme {
+    background-color: #808080;
+    color: #000;
+}
+
+body.gray-theme header,
+body.gray-theme nav,
+body.gray-theme .podesavanja,
+body.gray-theme .hero-kontent,
+body.gray-theme .kontaktstr,
+body.gray-theme footer,
+body.gray-theme .o-nama {
+    background-color: #808080;
+    color: #000;
+}
+
+/* Stilovi za mega meni */
+nav ul {
+    position: relative;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 600px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+}
+
+nav ul li:hover .dropdown-content {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-content .row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.dropdown-content .column {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.dropdown-content .column h3 {
+    margin-bottom: 10px;
+}
+
+.dropdown-content .column a {
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content .column a:hover {
+    background-color: #ddd;
+}
+.podesavanja{
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.podesavanja button {
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.podesavanja button img {
+    width: 24px;
+    height: 24px;
+}
+
+

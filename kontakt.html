@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktirajte nas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="zaglavlje">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mail">
+                <img src="img/mail.png" alt="Mail ikonica">
+                <p>minatutus002@gmail.com</p>
+            </div>
+        </div>
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="o-nama.html">O nama</a></li>
+                <li><a href="proizvodi.html">Proizvodi</a></li>
+                <li><a href="kontakt.html" class="kontakt-dugme">Kontakt</a></li>
+            </ul>
+            <div class="podesavanja">
+                <button id="tema">
+                    <img src="img/tema.png" alt="Promeni temu">
+                </button>
+                <button id="font">
+                    <img src="img/velicina.png" alt="Promeni veličinu fonta">
+                </button>
+            </div>
+        </nav>
+    </header>
+    <aside id="zaglavljestr">
+        <a href="javascript:void(0)" class="zatvori" id="zatvori-hamburger">&times;</a>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="o-nama.html">O nama</a></li>
+            <li><a href="proizvodi.html">Proizvodi</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section id="contact" class="kontakt-sekcija">
+            <h3>Kontaktirajte nas</h3>
+            <h2>Uvek smo dostupni za vaša pitanja i sugestije!</h2>
+            <div class="kontaktstr-sadrzaj">
+                <form id="kontakt-forma">
+                    <div class="">
+                        <label for="name"><img src="img/user.png" alt="Korisnik"></label>
+                        <input type="text" id="name" name="name" placeholder="Ime" required>
+                    </div>
+                    <div class="form-grupa">
+                        <label for="email"><img src="img/mail2.png" alt="Ikonica Mail"></label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-grupa">
+                        <label for="message"><img src="img/chat.png" alt="Ikonica Poruke"></label>
+                        <textarea id="message" name="message" placeholder="Poruka" required></textarea>
+                    </div>
+                    <button type="submit">Pošalji</button>
+                </form>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.410546488601!2d20.396553615520754!3d45.378608979100334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b0d1e38c1b4f5%3A0xaef1bdbd2d2f6201!2sTechnical%20Faculty%20Zrenjanin!5e0!3m2!1sen!2srs!4v1621536206102!5m2!1sen!2srs" style="border:0; width: 100%; height: 500px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Umetnička Galerija. Sva prava zadržana.</p>
+    </footer>
+</body>
+</html>
