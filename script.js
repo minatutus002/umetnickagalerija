@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('form');
     form.addEventListener('submit', (e) => {
         const name = form.querySelector('input[name="name"]');
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
         }
     });
-});
+});*/
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -141,11 +141,11 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.style.display = 'none';
     });
 
-    potvrda.addEventListener('click', () => {
+    /*potvrda.addEventListener('click', () => {
         
         alert('Uspešno ste potvrdili rezervaciju!');
         
-    });
+    });*/
 });
 
 function popupFN(){
@@ -228,4 +228,55 @@ function getCookie(name) {
     }
     return "";
 }
+document.addEventListener('DOMContentLoaded', () => {
+    // Validacija kontakt forme
+    const kontaktForma = document.getElementById('kontakt-forma');
+    if (kontaktForma) {
+        kontaktForma.addEventListener('submit', (e) => {
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const message = document.getElementById('message');
+            if (!name.value || !email.value || !message.value) {
+                alert('Sva polja su obavezna');
+                e.preventDefault();
+            }
+        });
+    }
+
+    // Validacija rezervacije
+    const rezervacijaForma = document.getElementById('Rezervacija');
+    if (rezervacijaForma) {
+        const rezervacijaButton = document.getElementById('potvrda');
+        rezervacijaButton.addEventListener('click', (e) => {
+            const ime = document.getElementById('Ime');
+            const prezime = document.getElementById('Prezime');
+            const email = document.getElementById('Email1');
+            if (!ime.value || !prezime.value || !email.value) {
+                alert('Sva polja su obavezna');
+                e.preventDefault();
+            }
+            else
+            {
+                alert('Uspešna rezervacija!');
+            }
+        });
+    }
+
+    // Validacija prijave za ulogu
+    const validirajUlogu = () => {
+        const imeUloga = document.getElementById('ImeUloga');
+        const prezimeUloga = document.getElementById('PrezimeUloga');
+        const porukaUloga = document.getElementById('PorukaUloga');
+        if (!imeUloga.value || !prezimeUloga.value || !porukaUloga.value) {
+            alert('Sva polja su obavezna');
+            return false;
+        } else {
+            alert('Uspešno ste poslali prijavu!');
+            closeFN();
+            return true;
+        }
+    };
+    window.validirajUlogu = validirajUlogu;
+});
+
 

@@ -105,12 +105,12 @@
                     <span class="zatvori" id="zatvori1" onclick="closeFN()">&times;</span>
                     <h1 style="text-align: center;">Unesite Vaše podatke i recite nam zašto ste baš Vi pravi kandidat za ulogu "Umetnički ekspert"</h1>
                     <p id="prozorce">Ime:</p>
-                    <input type="text">
+                    <input type="text" id="ImeUloga" required>
                     <p id="prozorce">Prezime:</p>
-                    <input type="text">
+                    <input type="text" id="PrezimeUloga" required>
                     <p id="prozorce">Poruka:</p>
-                    <textarea cols="50" rows="5"></textarea><br>
-                    <button class="btn" onclick="alert('Uspesno ste poslali poruku! Hvala!')">Pošalji</button>
+                    <textarea cols="50" rows="5" id="PorukaUloga" required></textarea><br>
+                    <button class="btn"  onclick="validirajUlogu()">Pošalji</button>
                 </div>
         </section>
         <section id="izlozba" class="kartice">
